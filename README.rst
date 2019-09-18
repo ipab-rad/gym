@@ -1,3 +1,6 @@
+RAD-modified OpenAI Gym (Fetch Robotics Env specifically) to be used by robot_gym (https://github.com/ipab-rad/robot_gym). Modifications allow for finer controll over the end effector pose through an HTC Vive teleoperation setup and custom-designed scenes and objects. 
+**********
+
 **Status:** Maintenance (expect bug fixes and minor updates)
 
 OpenAI Gym
