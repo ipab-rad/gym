@@ -50,10 +50,13 @@ def mocap_set_action(sim, action):
 
         pos_delta = action[:, :3]
         quat_delta = action[:, 3:]
-
+ 
         reset_mocap2body_xpos(sim)
-        sim.data.mocap_pos[:] = sim.data.mocap_pos + pos_delta
-        sim.data.mocap_quat[:] = sim.data.mocap_quat + quat_delta
+        
+        # sim.data.mocap_pos[:] = sim.data.mocap_pos + pos_delta
+        sim.data.mocap_pos[:] = pos_delta
+        # sim.data.mocap_quat[:] = sim.data.mocap_quat + quat_delta
+        sim.data.mocap_quat[:] = quat_delta
 
 
 def reset_mocap_welds(sim):
